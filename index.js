@@ -9,11 +9,12 @@ function getData(city) {
     .then((data) => {
         console.log(data)
         document.querySelector(".city").innerText = data.name
-        document.querySelector(".temp").innerText = data.main.temp + "°C"
+        document.querySelector(".temp").innerText = Math.round(data.main.temp)
+        document.querySelector(".cel").innerText = "°C"
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + data.weather[0].icon +"@2x.png"
         document.querySelector(".descrip").innerText = data.weather[0].description 
-        document.querySelector(".humidity").innerText = data.main.humidity + "%"
-        document.querySelector(".wind").innerText = data.clouds.all + "km/h"
+        document.querySelector(".humidity").innerText = "Humidity : " + data.main.humidity + "%"
+        document.querySelector(".wind").innerText = "Wind Speed : " + data.clouds.all + "km/h"
     } )
 }
 

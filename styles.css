@@ -1,0 +1,51 @@
+.takeInput{
+    display: flex;
+    justify-content: flex-end;
+    margin: 60px;
+}
+#city-name{
+    height: 25px;
+    margin: 5px;
+    font-size: 18px;    
+}
+#search-btn{
+    font-size: 18px;
+    margin: 5px;
+}
+
+.details{
+   display: flex;
+}
+
+.tempCel{
+    display: flex;
+}
+
+.temp{
+    font-size: 130px;
+    margin-top: -18px;
+}
+
+.cel{
+    
+    font-size: 20px;
+}
+.descrip{
+    font-size: 22px;
+    padding-left: 15px;
+}
+.city{
+    font-size: 36px;
+    padding-left: 15px;
+}
+
+.icon{
+    margin-top: -40px;
+    height: 140px;
+}
+
+.humidity,.wind{
+    font-size: 22px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
