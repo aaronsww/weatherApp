@@ -23,5 +23,4 @@ document.querySelector("#search-btn").addEventListener("click" , getFormData)
 function getFormData() {
     let cityName = document.getElementById("city-name");
     getData(cityName.value);
-    console.log("hmm")
 }
